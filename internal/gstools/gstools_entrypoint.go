@@ -25,16 +25,18 @@ func environmentCheck() {
 
 // Entrypoint is the main entry point for gstools
 func Entrypoint() {
-	// Bootstrap logic goes here
-	bootstrap()
+	for {
+		Bootstrap()
+		fmt.Println("Do you want to restart the program? (yes/no)")
+		var choice string
+		fmt.Scanln(&choice)
+		if choice == "no" {
+			break
+		}
+	}
 
 	// CLI dispatch logic goes here
 	cliDispatch()
-}
-
-func bootstrap() {
-	// Placeholder for bootstrap logic
-	fmt.Println("Bootstrap completed")
 }
 
 func cliDispatch() {
