@@ -1,7 +1,7 @@
-package main
+package gstools
 
 import "gstools/internal/gstools"
 
-func main() {
+func Run() {
 	gstools.Entrypoint()
 }

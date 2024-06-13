@@ -1,4 +1,3 @@
-// gstools_entrypoint.go
 package gstools
 
 import (
